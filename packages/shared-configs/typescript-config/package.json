@@ -1,0 +1,17 @@
+{
+  "name": "@flammeo-cms/tsconfig",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@vue/tsconfig": "^0.7.0"
+  },
+  "exports": {
+    "./library": "./library.json",
+    "./nuxt-app": "./nuxt.json",
+    "./vue-lib": "./vue.json"
+  }
+}

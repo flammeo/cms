@@ -11,7 +11,7 @@
     "check-types": "turbo run check-types",
     "release": "changeset publish",
     "version": "changeset version",
-    "changeset:make": "changeset",
+    "changeset:make": "changeset && git add .",
     "prepare": "husky"
   },
   "devDependencies": {

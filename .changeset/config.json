@@ -7,9 +7,9 @@
     }
   ],
   "commit": false,
-  "fixed": [],
+  "fixed": [["@flammeo-cms/*"]],
   "linked": [],
-  "access": "restricted",
+  "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": []

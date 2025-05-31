@@ -1,5 +1,11 @@
 # @flammeo-cms/eslint-config
 
+## 0.0.4
+
+### Patch Changes
+
+- [#8](https://github.com/flammeo/cms/pull/8) [`de0e80e`](https://github.com/flammeo/cms/commit/de0e80ef2e28d1042fa5bd2deaa8e6bc7fe804ab) Thanks [@bendavies99](https://github.com/bendavies99)! - Add unified releases for github
+
 ## 0.0.3
 
 ### Patch Changes

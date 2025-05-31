@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "type": "module",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     "./base": "./base.js"
   },

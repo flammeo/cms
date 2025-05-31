@@ -2,7 +2,7 @@
   "name": "@flammeo-cms/prettier-config",
   "version": "0.0.1",
   "type": "module",
-  "private": true,
+  "private": false,
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -11,6 +11,6 @@
     ".": "./config.js"
   },
   "devDependencies": {
-    "prettier": "^3.5.3"
+    "prettier": "catalog:"
   }
 }

@@ -2,18 +2,18 @@
   "name": "@flammeo-cms/eslint-config",
   "version": "0.0.1",
   "type": "module",
-  "private": true,
+  "private": false,
   "exports": {
     "./base": "./base.js"
   },
   "devDependencies": {
     "@eslint/js": "^9.27.0",
-    "eslint": "^9.27.0",
+    "eslint": "catalog:",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-only-warn": "^1.1.0",
     "eslint-plugin-turbo": "^2.5.0",
     "globals": "^16.2.0",
-    "typescript": "^5.8.2",
+    "typescript": "catalog:",
     "typescript-eslint": "^8.32.0"
   }
 }

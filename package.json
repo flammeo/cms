@@ -16,8 +16,8 @@
   "devDependencies": {
     "@flammeo-cms/prettier-config": "workspace:*",
     "prettier": "^3.5.3",
-    "turbo": "^2.5.3",
-    "typescript": "5.8.2"
+    "turbo": "^2.5.4",
+    "typescript": "5.8.3"
   },
   "prettier": "@flammeo-cms/prettier-config",
   "packageManager": "pnpm@10.11.0",

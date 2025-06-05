@@ -11,8 +11,12 @@
     "dev": "tsup src/main.ts --format esm,cjs --dts --clean --sourcemap --watch --target es2020",
     "run": "node ./dist/main.js",
     "test": "vitest run",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepublishOnly": "pnpm run build"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "dependencies": {
     "tsup": "^8.5.0",
     "reflect-metadata": "^0.2.2"

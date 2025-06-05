@@ -1,6 +1,6 @@
 {
   "name": "@flammeo-cms/eslint-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "private": false,
   "publishConfig": {

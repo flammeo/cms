@@ -1,0 +1,44 @@
+{
+  "name": "@flammeo-cms/eslint-plugin",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup src/main.ts --format esm,cjs --dts --clean --sourcemap --target es2020",
+    "dev": "tsup src/main.ts --format esm,cjs --dts --clean --sourcemap --watch --target es2020",
+    "test": "vitest run",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "tsup": "^8.5.0",
+    "reflect-metadata": "^0.2.2",
+    "eslint": "catalog:",
+    "@typescript-eslint/utils": "^8.33.1"
+  },
+  "devDependencies": {
+    "@flammeo-cms/eslint-config": "workspace:*",
+    "@flammeo-cms/tsconfig": "workspace:*",
+    "@typescript-eslint/rule-tester": "^8.33.1",
+    "dedent": "^1.6.0"
+  },
+  "lint-staged": {
+    "*.ts": "eslint"
+  },
+  "type": "module",
+  "main": "./dist/main.cjs",
+  "module": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "exports": {
+    "import": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.js"
+    },
+    "require": {
+      "types": "./dist/main.d.cts",
+      "require": "./dist/main.cjs"
+    }
+  }
+}

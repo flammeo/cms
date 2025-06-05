@@ -1,0 +1,42 @@
+{
+  "name": "@flammeo-cms/core",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup src/main.ts --format esm,cjs --dts --clean --sourcemap --target es2020 --minify",
+    "dev": "tsup src/main.ts --format esm,cjs --dts --clean --sourcemap --watch --target es2020",
+    "run": "node ./dist/main.js",
+    "test": "vitest run",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "tsup": "^8.5.0",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@flammeo-cms/eslint-config": "workspace:*",
+    "@flammeo-cms/tsconfig": "workspace:*",
+    "@flammeo-cms/eslint-plugin": "workspace:*"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --fix"
+  },
+  "type": "module",
+  "main": "./dist/main.cjs",
+  "module": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "exports": {
+    "import": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.js"
+    },
+    "require": {
+      "types": "./dist/main.d.cts",
+      "require": "./dist/main.cjs"
+    }
+  }
+}

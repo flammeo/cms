@@ -1,5 +1,11 @@
 # @flammeo-cms/tsconfig
 
+## 0.1.2
+
+### Patch Changes
+
+- [`f48a092`](https://github.com/flammeo/cms/commit/f48a09233e8db93d8a9394b7ed63721b84cbf962) Thanks [@bendavies99](https://github.com/bendavies99)! - fix an issue with composite building
+
 ## 0.1.1
 
 ## 0.1.0

@@ -1,5 +1,11 @@
 # @flammeo-cms/core
 
+## 0.1.1
+
+### Patch Changes
+
+- [`60b007f`](https://github.com/flammeo/cms/commit/60b007f17f9c12de2290c19fbe551c5e27f463bf) Thanks [@bendavies99](https://github.com/bendavies99)! - ensure that only the dist files are pushed to npm
+
 ## 0.1.0
 
 ### Minor Changes

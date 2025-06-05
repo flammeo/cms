@@ -5,7 +5,6 @@
     "declarationMap": true,
     "esModuleInterop": true,
     "incremental": false,
-    "composite": true,
     "isolatedModules": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,

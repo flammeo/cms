@@ -17,22 +17,20 @@ jobs:
     timeout-minutes: 20
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: install dependencies
-        uses: pnpm/action-setup@v4.1.0
-      - uses: actions/setup-node@v4
+      - name: Checkout Repo
+        uses: actions/checkout@v4
         with:
-          node-version-file: ".nvmrc"
-          cache: "pnpm"
-      - name: Setup Turbo
-        run: pnpm add -g turbo
-      - name: Install Deps
-        run: pnpm install
+          fetch-depth: 100
+
+      - name: Setup Node
+        uses: ./tooling/github/setup-node
+
       - name: Storing release version for changeset
         id: release_version
         run: echo "VALUE=$(./.github/scripts/print_release_version.sh)" >> $GITHUB_OUTPUT
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Creating release pull request or publishing release to npm registry
         id: changesets
         uses: dotansimha/changesets-action@v1.5.2

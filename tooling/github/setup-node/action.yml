@@ -1,0 +1,16 @@
+name: Setup Node and PNPM
+runs:
+  using: composite
+  steps:
+    - name: install dependencies
+      uses: pnpm/action-setup@v4.1.0
+    - uses: actions/setup-node@v4
+      with:
+        node-version-file: ".nvmrc"
+        cache: "pnpm"
+    - name: Setup Turbo
+      shell: bash
+      run: pnpm add -g turbo
+    - name: Install Deps
+      shell: bash
+      run: pnpm install

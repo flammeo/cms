@@ -1,4 +1,6 @@
 name: test-and-lint.yml
+permissions:
+  contents: read
 on:
   pull_request:
     branches:

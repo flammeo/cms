@@ -4,7 +4,7 @@ packages:
   - tooling/*
 
 catalog:
-  eslint: ^9.27.0
+  eslint: ^9.30.1
   prettier: ^3.5.3
   typescript: ^5.8.3
 
